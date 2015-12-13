@@ -4,13 +4,10 @@ import java.util.ArrayList;
 
 public class ResultSet {
 
-    private boolean found;
+    public boolean found() { return results.size() > 0; }
 
-    public boolean found() { return found; }
-    public void found(boolean found) { this.found = found; }
-
-    private ArrayList<Result> results;
-
+    private ArrayList<Result> results = new ArrayList<>();
     public ArrayList<Result> results() { return results; }
-    public void results(ArrayList<Result> results) { this.results = results; }
+
+    public void add(Result result) { this.results.add(result); }
 }
