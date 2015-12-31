@@ -37,7 +37,7 @@ public class RK implements Strategy {
             int sHash = hash(from, i, tLength);
 
             if (tHash == sHash)
-                set.add(new Result(i, i + tLength));
+                set.add(new Result(i, i + tLength - 1));
         }
 
         return set;
